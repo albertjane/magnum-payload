@@ -21,7 +21,8 @@ module Magnum
                   :committer_email, # Committer email address
                   :author_email,    # Commit author email address
                   :commit_url,      # Url to view commit diff
-                  :compare_url      # URL to view multiple commits diff
+                  :compare_url,      # URL to view multiple commits diff
+				  :repository          # Repository
 
       def initialize(payload)
         set_defaults
@@ -42,7 +43,8 @@ module Magnum
           "committer"   => committer,
           "message"     => message,
           "commit_url"  => commit_url,
-          "compare_url" => compare_url
+          "compare_url" => compare_url,
+		  "repository" => repository
         }
       end
 

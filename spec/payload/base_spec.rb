@@ -93,7 +93,8 @@ describe Magnum::Payload::Base do
         "committer",
         "message",
         "commit_url",
-        "compare_url"
+        "compare_url",
+		"repository"
       ]
     end
   end

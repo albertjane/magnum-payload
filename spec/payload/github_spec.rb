@@ -41,6 +41,10 @@ describe Magnum::Payload::Github do
       expect(payload.compare_url).to eq "https://github.com/sosedoff/lxc-ruby/compare/0e46f019e391...9d227f327e72"
     end
 
+    it "sets commit repository" do
+      expect(payload.repository).to eq "lxc-ruby"
+    end
+	
     context "when push is forced" do
       let(:data) { fixture "github/forced.json" }
 

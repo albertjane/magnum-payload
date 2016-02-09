@@ -16,6 +16,7 @@ module Magnum
       @branch          = data.ref.gsub("refs/heads/", "")
       @commit_url      = last_commit.url
       @compare_url     = data.compare
+	  @repository       = data.repository.name
     end
 
     def skip_payload?
