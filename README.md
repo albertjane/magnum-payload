@@ -84,6 +84,7 @@ Attributes are depending on payload class.
 - `author_email`    - Author email (git)
 - `commit_url`      - Direct URL to view commit diff
 - `compare_url`     - Direct URL to view commits diff
+- `repository`       - Repository name
 
 ## Test Suite
 
